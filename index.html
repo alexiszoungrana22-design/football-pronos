@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#075b3a">
+  <meta name="description" content="Football Pronos : matchs, statistiques et analyses de football.">
+  <title>Football Pronos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">⚽ Football <span>Pronos</span></a>
+    <p>Comprendre les matchs. Analyser avant de pronostiquer.</p>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <p class="eyebrow">LA PASSION DU FOOTBALL</p>
+      <h1>Les matchs, mieux analysés.</h1>
+      <p>
+        Retrouvez bientôt les rencontres, les statistiques
+        et les analyses des grandes compétitions.
+      </p>
+    </section>
+
+    <section class="filters">
+      <label for="region">Compétitions</label>
+      <select id="region">
+        <option value="tous">Toutes les zones</option>
+        <option value="europe">Europe</option>
+        <option value="afrique">Afrique</option>
+        <option value="international">International</option>
+      </select>
+
+      <label for="market">Type d'analyse</label>
+      <select id="market">
+        <option value="tous">Tous les types</option>
+        <option value="1n2">Résultat 1N2</option>
+        <option value="buts">Plus/Moins de 2,5 buts</option>
+        <option value="btts">Les deux équipes marquent</option>
+      </select>
+    </section>
+
+    <section class="matches-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ESPACE MATCHS</p>
+          <h2>Rencontres de démonstration</h2>
+        </div>
+        <span class="demo-label">MODE TEST</span>
+      </div>
+
+      <p id="status" class="notice">
+        Ces données sont fictives. Les analyses réelles ne sont pas encore connectées.
+      </p>
+
+      <div id="matches" class="matches"></div>
+    </section>
+
+    <section class="disclaimer">
+      <h2>Notre engagement</h2>
+      <p>
+        Les analyses seront évaluées à partir des résultats réels.
+        Aucun pronostic ne garantit un gain.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Football Pronos · Première version</p>
+  </footer>
+</body>
+</html>
